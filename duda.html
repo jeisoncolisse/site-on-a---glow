@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onça Glow Design Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="particles" id="particles"></div>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <header id="header">
+      <a href="#" class="logo-wrap">
+        <img src="imagens/logo.png" class="logo" alt="Onça Glow" />
+      </a>
+      <nav id="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#precos">Preços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div class="mobile-overlay" id="mobileOverlay">
+      <nav class="mobile-nav">
+        <a href="#sobre"    class="mobile-link">Sobre</a>
+        <a href="#servicos" class="mobile-link">Serviços</a>
+        <a href="#precos"   class="mobile-link">Preços</a>
+        <a href="#galeria"  class="mobile-link">Galeria</a>
+        <a href="#contato"  class="mobile-link">Contato</a>
+      </nav>
+    </div>
+
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img src="imagens/ChatGPT Image 26 de mai. de 2026, 19_18_01 (1).png" alt="Onça Glow Banner" class="hero-banner-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content" id="heroContent">
+        <p class="hero-eyebrow reveal">Nail Design Studio</p>
+        <h1 class="hero-title reveal">
+          <span>Beleza que</span>
+          <em>Transforma</em>
+        </h1>
+        <p class="hero-sub reveal">
+          Sofisticação, poder e feminilidade em cada detalhe das suas unhas.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn-primary" href="https://wa.me/5554984150735" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Agendar Agora
+          </a>
+          <a class="btn-outline" href="#servicos">Ver Serviços</a>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator"><span></span></div>
+    </section>
+
+    <section id="sobre" class="sobre section-pad">
+      <div class="container">
+        <div class="sobre-grid">
+          <div class="sobre-visual">
+            <div class="sobre-img-wrap">
+              <img src="imagens/logo.png" alt="Onça Glow" class="sobre-logo" />
+              <div class="sobre-ring"></div>
+            </div>
+          </div>
+          <div class="sobre-text">
+            <p class="section-label reveal">Nossa história</p>
+            <h2 class="section-title reveal">Sobre a <em>Onça Glow</em></h2>
+            <p class="sobre-desc reveal">
+              A Onça Glow é um estúdio de Nail Design especializado em
+              alongamentos, blindagem e nail art premium. Unimos técnica
+              apurada, produtos de alta qualidade e um olhar artístico único
+              para realçar sua beleza com sofisticação e poder.
+            </p>
+            <div class="sobre-stats reveal">
+              <div class="stat">
+                <span class="stat-num" data-target="500">0</span><span>+</span>
+                <p>Clientes atendidas</p>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-target="3">0</span><span>+</span>
+                <p>Anos de experiência</p>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-target="100">0</span><span>%</span>
+                <p>Satisfação garantida</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="servicos section-pad">
+      <div class="container">
+        <p class="section-label reveal center">O que oferecemos</p>
+        <h2 class="section-title reveal center">Nossos <em>Serviços</em></h2>
+        <div class="servicos-grid">
+
+          <div class="servico-card reveal">
+            <div class="servico-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 8C20 8 12 18 12 30s8 22 20 22 20-10 20-22S44 8 32 8z" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M26 28c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6-6-2.7-6-6z" fill="currentColor" opacity=".3" />
+                <path d="M20 44l4-8M44 44l-4-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <h3>Alongamento</h3>
+            <p>Fibra de vidro, gel ou acrílico. Comprimento e formato personalizados para realçar a elegância das suas mãos.</p>
+            <span class="servico-tag">Mais popular</span>
+          </div>
+
+          <div class="servico-card reveal">
+            <div class="servico-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 48l4-32h24l4 32H16z" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M24 20V16a8 8 0 0116 0v4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <path d="M28 34a4 4 0 108 0 4 4 0 00-8 0z" fill="currentColor" opacity=".4" />
+              </svg>
+            </div>
+            <h3>Blindagem</h3>
+            <p>Proteção premium para unhas naturais. Fortalecimento com gel ou resina para unhas mais resistentes e bonitas.</p>
+          </div>
+
+          <div class="servico-card reveal">
+            <div class="servico-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 50l6-6 24-24-6-6-24 24-6 6 6 6z" stroke="currentColor" stroke-width="2" fill="none" />
+                <path d="M44 14l6 6-4 4-6-6 4-4z" fill="currentColor" opacity=".4" />
+                <circle cx="20" cy="44" r="3" fill="currentColor" opacity=".5" />
+              </svg>
+            </div>
+            <h3>Nail Art</h3>
+            <p>Arte exclusiva nas suas unhas. Designs únicos, desde o delicado ao marcante, criados especialmente para você.</p>
+          </div>
+
+          <div class="servico-card reveal">
+            <div class="servico-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 12v8M32 44v8M12 32h8M44 32h8" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                <circle cx="32" cy="32" r="12" stroke="currentColor" stroke-width="2" fill="none" />
+                <circle cx="32" cy="32" r="5" fill="currentColor" opacity=".4" />
+              </svg>
+            </div>
+            <h3>Manicure Spa</h3>
+            <p>Uma experiência completa de cuidado. Hidratação, cutícula, esmaltação e um momento de puro relaxamento.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="precos" class="precos section-pad">
+      <div class="container">
+        <p class="section-label reveal center">Investimento</p>
+        <h2 class="section-title reveal center">Tabela de <em>Preços</em></h2>
+        <p class="section-sub reveal center">Somente mãos · Escolha o serviço ideal para você</p>
+
+        <div class="preco-carousel-wrap">
+          <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#8592;</button>
+          <div class="preco-carousel" id="precoCarousel">
+
+            <div class="preco-card">
+              <div class="preco-badge">Clássico</div>
+              <div class="preco-icon">💅</div>
+              <h3>Esmaltação Tradicional</h3>
+              <div class="preco-valor">
+                <span class="preco-num">R$ 35</span>
+              </div>
+              <ul class="preco-features">
+                <li>✦ Cutícula tratada</li>
+                <li>✦ Lixamento e forma</li>
+                <li>✦ Esmaltação colorida</li>
+                <li>✦ Somente mãos</li>
+              </ul>
+              <a href="https://wa.me/5554984150735" class="preco-btn" target="_blank">Agendar</a>
+            </div>
+
+            <div class="preco-card destaque">
+              <div class="preco-badge">Mais pedido</div>
+              <div class="preco-badge-top">★ Popular</div>
+              <div class="preco-icon">✨</div>
+              <h3>Blindagem + Esmaltação</h3>
+              <div class="preco-valor">
+                <span class="preco-num">R$ 75</span>
+              </div>
+              <ul class="preco-features">
+                <li>✦ Gel ou resina premium</li>
+                <li>✦ Fortalecimento total</li>
+                <li>✦ Esmaltação incluída</li>
+                <li>✦ Maior durabilidade</li>
+                <li>✦ Somente mãos</li>
+              </ul>
+              <a href="https://wa.me/5554984150735" class="preco-btn" target="_blank">Agendar</a>
+            </div>
+
+            <div class="preco-card">
+              <div class="preco-badge">Premium</div>
+              <div class="preco-icon">💎</div>
+              <h3>Alongamento em Soft</h3>
+              <div class="preco-valor">
+                <span class="preco-num">R$ 100</span>
+              </div>
+              <ul class="preco-features">
+                <li>✦ Fibra soft gel</li>
+                <li>✦ Forma personalizada</li>
+                <li>✦ Acabamento perfeito</li>
+                <li>✦ Longa duração</li>
+                <li>✦ Somente mãos</li>
+              </ul>
+              <a href="https://wa.me/5554984150735" class="preco-btn" target="_blank">Agendar</a>
+            </div>
+
+            <div class="preco-card">
+              <div class="preco-badge">Arte</div>
+              <div class="preco-icon">🎨</div>
+              <h3>Nail Art</h3>
+              <div class="preco-valor">
+                <span class="preco-from">a partir de</span>
+                <span class="preco-num">R$ 80</span>
+              </div>
+              <ul class="preco-features">
+                <li>✦ Design exclusivo</li>
+                <li>✦ Aplicação de pedras</li>
+                <li>✦ Degradê e francesinha</li>
+                <li>✦ Arte em todas as unhas</li>
+              </ul>
+              <a href="https://wa.me/5554984150735" class="preco-btn" target="_blank">Agendar</a>
+            </div>
+
+            <div class="preco-card">
+              <div class="preco-badge">Luxo</div>
+              <div class="preco-icon">🐆</div>
+              <h3>Experiência Onça</h3>
+              <div class="preco-valor">
+                <span class="preco-from">a partir de</span>
+                <span class="preco-num">R$ 250</span>
+              </div>
+              <ul class="preco-features">
+                <li>✦ Pacote completo VIP</li>
+                <li>✦ Alongamento + nail art</li>
+                <li>✦ Spa de mãos premium</li>
+                <li>✦ Pedras e acessórios</li>
+                <li>✦ Atendimento exclusivo</li>
+                <li>✦ Brinde especial</li>
+              </ul>
+              <a href="https://wa.me/5554984150735" class="preco-btn" target="_blank">Agendar</a>
+            </div>
+
+          </div>
+          <button class="carousel-btn next" id="nextBtn" aria-label="Próximo">&#8594;</button>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <section id="galeria" class="galeria section-pad">
+      <div class="container">
+        <p class="section-label reveal center">Portfólio</p>
+        <h2 class="section-title reveal center">Nossos <em>Trabalhos</em></h2>
+
+        <div class="galeria-slider" id="galeriaSlider">
+          <div class="galeria-track" id="galeriaTrack">
+
+            <div class="galeria-slide active">
+              <img src="imagens/galeria-otimizada/unha-2026-05-30-12.37.54.jpeg" alt="Onça Glow – Nail Design" />
+              <div class="galeria-caption"><span>Beleza • Autenticidade • Poder</span></div>
+            </div>
+
+            <div class="galeria-slide">
+              <img src="imagens/galeria-otimizada/unha-2026-05-30-12.38.04.jpeg" alt="Onça Glow – Nail Design" />
+              <div class="galeria-caption"><span>Beleza • Autenticidade • Poder</span></div>
+            </div>
+
+            <div class="galeria-slide">
+              <img src="imagens/galeria-otimizada/unha-2026-05-30-12.38.37.jpeg" alt="Onça Glow – Nail Design" />
+              <div class="galeria-caption"><span>Beleza • Autenticidade • Poder</span></div>
+            </div>
+
+            <div class="galeria-slide">
+              <img src="imagens/galeria-otimizada/unha-2026-05-30-12.40.17.jpeg" alt="Onça Glow – Nail Design" />
+              <div class="galeria-caption"><span>Beleza • Autenticidade • Poder</span></div>
+            </div>
+
+            <div class="galeria-slide">
+              <img src="imagens/galeria-otimizada/unha-2026-05-30-12.41.15.jpeg" alt="Onça Glow – Nail Design" />
+              <div class="galeria-caption"><span>Beleza • Autenticidade • Poder</span></div>
+            </div>
+
+            <div class="galeria-slide">
+              <img src="imagens/galeria-otimizada/unha-2026-05-30-12.42.35.jpeg" alt="Onça Glow – Nail Design" />
+              <div class="galeria-caption"><span>Beleza • Autenticidade • Poder</span></div>
+            </div>
+
+          </div>
+
+          <button class="galeria-btn galeria-prev" id="galPrev">&#8592;</button>
+          <button class="galeria-btn galeria-next" id="galNext">&#8594;</button>
+          <div class="galeria-dots" id="galeriaDots"></div>
+        </div>
+
+        <div class="galeria-thumbs">
+          <div class="galeria-thumb active" data-idx="0">
+            <img src="imagens/galeria-otimizada/unha-2026-05-30-12.37.54.jpeg" alt="Miniatura 1" />
+          </div>
+          <div class="galeria-thumb" data-idx="1">
+            <img src="imagens/galeria-otimizada/unha-2026-05-30-12.38.04.jpeg" alt="Miniatura 2" />
+          </div>
+          <div class="galeria-thumb" data-idx="2">
+            <img src="imagens/galeria-otimizada/unha-2026-05-30-12.38.37.jpeg" alt="Miniatura 3" />
+          </div>
+          <div class="galeria-thumb" data-idx="3">
+            <img src="imagens/galeria-otimizada/unha-2026-05-30-12.40.17.jpeg" alt="Miniatura 4" />
+          </div>
+          <div class="galeria-thumb" data-idx="4">
+            <img src="imagens/galeria-otimizada/unha-2026-05-30-12.41.15.jpeg" alt="Miniatura 5" />
+          </div>
+          <div class="galeria-thumb" data-idx="5">
+            <img src="imagens/galeria-otimizada/unha-2026-05-30-12.42.35.jpeg" alt="Miniatura 6" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="depoimentos section-pad">
+      <div class="container">
+        <p class="section-label reveal center">Clientes</p>
+        <h2 class="section-title reveal center">O que dizem <em>sobre nós</em></h2>
+        <div class="depo-grid">
+
+          <div class="depo-card reveal">
+            <div class="depo-stars">★★★★★</div>
+            <p>"As unhas mais lindas que já fiz na vida! Profissional incrível, ambiente aconchegante e resultado perfeito."</p>
+            <div class="depo-author">
+              <div class="depo-avatar">A</div>
+              <div><strong>Amanda Silva</strong><span>Cliente há 2 anos</span></div>
+            </div>
+          </div>
+
+          <div class="depo-card reveal">
+            <div class="depo-stars">★★★★★</div>
+            <p>"A Experiência Onça foi incrível! Me senti uma rainha. Os detalhes da nail art são de outro nível."</p>
+            <div class="depo-author">
+              <div class="depo-avatar">J</div>
+              <div><strong>Juliana Martins</strong><span>Cliente fiel</span></div>
+            </div>
+          </div>
+
+          <div class="depo-card reveal">
+            <div class="depo-stars">★★★★★</div>
+            <p>"Nunca mais fui em outro lugar. A blindagem dura semanas e minha unha natural ficou muito mais forte!"</p>
+            <div class="depo-author">
+              <div class="depo-avatar">F</div>
+              <div><strong>Fernanda Costa</strong><span>Cliente há 1 ano</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contato section-pad">
+      <div class="container">
+        <p class="section-label reveal center">Fale conosco</p>
+        <h2 class="section-title reveal center"><em>Contato</em></h2>
+        <div class="contato-grid">
+
+          <div class="contato-info reveal">
+            <div class="contato-item">
+              <div class="contato-icon">📍</div>
+              <div>
+                <strong>Endereço</strong>
+                <p>Rua Ernesto Giacomet, 1430</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icon">📞</div>
+              <div>
+                <strong>WhatsApp</strong>
+                <p>(54) 98415-0735</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icon">📷</div>
+              <div>
+                <strong>Instagram</strong>
+                <p>@onca.glow</p>
+              </div>
+            </div>
+            <div class="contato-item">
+              <div class="contato-icon">⏰</div>
+              <div>
+                <strong>Horários</strong>
+                <p>Seg – Sáb: 9h às 19h</p>
+              </div>
+            </div>
+            <a href="https://wa.me/5554984150735" class="btn-primary whatsapp-btn" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Agendar pelo WhatsApp
+            </a>
+          </div>
+
+          <div class="contato-form-wrap reveal">
+            <form class="contato-form" id="contatoForm">
+              <div class="form-group">
+                <input type="text" id="nome" placeholder=" " required />
+                <label for="nome">Seu nome</label>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="telefone" placeholder=" " />
+                <label for="telefone">WhatsApp</label>
+              </div>
+              <div class="form-group">
+                <select id="servico">
+                  <option value="" disabled selected></option>
+                  <option value="esmaltacao">Esmaltação Tradicional</option>
+                  <option value="blindagem">Blindagem + Esmaltação</option>
+                  <option value="alongamento">Alongamento em Soft</option>
+                  <option value="nailart">Nail Art</option>
+                  <option value="oncaglow">Experiência Onça</option>
+                </select>
+                <label for="servico">Serviço desejado</label>
+              </div>
+              <div class="form-group">
+                <textarea id="mensagem" placeholder=" " rows="3"></textarea>
+                <label for="mensagem">Mensagem (opcional)</label>
+              </div>
+              <button type="submit" class="btn-primary full-width">
+                Enviar mensagem
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner container">
+        <img src="imagens/logo.png" class="footer-logo" alt="Onça Glow" />
+        <p class="footer-tagline">Beleza • Autenticidade • Poder</p>
+        <div class="footer-links">
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#precos">Preços</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <p class="footer-copy">© 2025 Onça Glow – Todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/5554984150735" class="wpp-float" target="_blank" aria-label="WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
